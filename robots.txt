@@ -1,0 +1,9 @@
+# robots.txt for Korea-Japan Science Festival Website
+User-agent: *
+Allow: /
+
+# Specifically allow Naver search bot
+User-agent: Yeti
+Allow: /
+
+Sitemap: https://korea-japan-science-festival.vercel.app/sitemap.xml
