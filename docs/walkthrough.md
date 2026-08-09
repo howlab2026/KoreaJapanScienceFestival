@@ -19,14 +19,15 @@
 
 ## 2. 파일 구조 (총 42개 파일 완결)
 
-### 🌐 웹사이트 소스코드 (7개)
+### 🌐 웹사이트 소스코드 (8개)
 - [index.html](file:///c:/Work/HowlabScienceLab/index.html): 동경(과학기술관) & 오사카(오사카 교육대학 텐노지 캠퍼스) 종합 메인
-- [css/style.css](file:///c:/Work/HowlabScienceLab/css/style.css): 한국형 태극 원자 로고 및 모노크롬 텍스트 스타일 적용
+- [css/style.css](file:///c:/Work/HowlabScienceLab/css/style.css): 한국형 태극 원자 로고, 모노크롬 텍스트 및 갤러리/라이트박스 스타일 적용
 - [js/script.js](file:///c:/Work/HowlabScienceLab/js/script.js): 인터랙션, 스크롤 애니메이션, 테마 영속 저장
 - [pages/tokyo.html](file:///c:/Work/HowlabScienceLab/pages/tokyo.html): 동경청소년과학제전 2026 전국대회 전용 페이지
 - [pages/osaka.html](file:///c:/Work/HowlabScienceLab/pages/osaka.html): 오사카청소년과학제전 2026 전용 페이지 (오사카 교육대학, 3대 프로그램 쇼)
 - [pages/schedule.html](file:///c:/Work/HowlabScienceLab/pages/schedule.html): 7월 동경 전국대회 & 8월 오사카대회(10:00~17:00) 타임테이블
 - [pages/access.html](file:///c:/Work/HowlabScienceLab/pages/access.html): 도쿄 과학기술관 & 오사카 교육대학 텐노지 캠퍼스 구글 지도 및 경로
+- [pages/gallery.html](file:///c:/Work/HowlabScienceLab/pages/gallery.html): 13개 색연필 카툰 이미지의 2x5 그리드 게시판 페이징 및 라이트박스 상세 뷰어 페이지
 
 ### 📁 프로젝트 문서군 (35개)
 - 완료보고서 17개 ([docs/completion_report/](file:///c:/Work/HowlabScienceLab/docs/completion_report/))
@@ -37,6 +38,7 @@
 
 ## 3. 브라우저 실시간 렌더링 검증 결과
 
+- ✅ **갤러리 게시판 페이지 (`pages/gallery.html`)**: 색연필 카툰 이미지(13개) 2x5 그리드 배치, 페이징 이동(Page 1 <-> Page 2), 카드 클릭 시 라이트박스 팝업 활성화, 슬라이드 내비게이션 및 키보드(ESC) 동작 완벽 확인.
 - ✅ **오사카 상세 페이지 (`pages/osaka.html`)**: 오사카 교육대학 텐노지 캠퍼스 개최지, 10:00~17:00 연장 시간, 미래교육 공창센터 & 서관 전시장, 부스/실내무대/야외무대 쇼 3대 프로그램 정상 표시.
 - ✅ **교통 안내 페이지 (`pages/access.html`)**: 오사카 교육대학 텐노지 캠퍼스 위치 구글 지도 및 JR 텐노지역 / JR 테라다초역 도보 경로 정상 작동.
 - ✅ **메인/상세 로고**: 태극 원자 궤도 SVG 및 모노크롬 "한·일" 텍스트 정상 연동.
