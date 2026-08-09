@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현장 분위기 갤러리 | 한일청소년과학제전</title>
+    <meta name="description" content="동경청소년과학제전 및 오사카과학제전 현장의 다양한 활동을 색연필 일러스트레이션 카툰으로 만나보세요.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="light-theme">
+    <!-- Header -->
+    <header id="main-header" class="header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo" id="nav-logo">
+                <div class="logo-icon-svg">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="18" r="16" fill="url(#logoGlowG)" opacity="0.2"/>
+                        <ellipse cx="18" cy="18" rx="14" ry="5.5" stroke="url(#blueGradG)" stroke-width="2.2" transform="rotate(-30 18 18)"/>
+                        <ellipse cx="18" cy="18" rx="14" ry="5.5" stroke="url(#redGradG)" stroke-width="2.2" transform="rotate(30 18 18)"/>
+                        <circle cx="18" cy="18" r="4.5" fill="url(#coreGradG)"/>
+                        <circle cx="18" cy="18" r="1.8" fill="#FFFFFF"/>
+                        <defs>
+                            <radialGradient id="logoGlowG" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18 18) scale(16)">
+                                <stop stop-color="#4facfe"/>
+                                <stop offset="1" stop-color="#ff4757" stop-opacity="0"/>
+                            </radialGradient>
+                            <linearGradient id="redGradG" x1="4" y1="18" x2="32" y2="18" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#ff4757"/>
+                                <stop offset="1" stop-color="#ffa502"/>
+                            </linearGradient>
+                            <linearGradient id="blueGradG" x1="4" y1="18" x2="32" y2="18" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#1e90ff"/>
+                                <stop offset="1" stop-color="#00d2d3"/>
+                            </linearGradient>
+                            <linearGradient id="coreGradG" x1="13.5" y1="13.5" x2="22.5" y2="22.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#ff4757"/>
+                                <stop offset="1" stop-color="#1e90ff"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="logo-text-wrap">
+                    <span class="logo-text"><span class="logo-kr-accent">한·일</span>청소년과학제전</span>
+                    <span class="logo-sub-badge">Korea - Japan Youth Science</span>
+                </div>
+            </a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">홈</a></li>
+                    <li><a href="../index.html#about" class="nav-link">소개</a></li>
+                    <li><a href="tokyo.html" class="nav-link">동경청소년과학제전</a></li>
+                    <li><a href="osaka.html" class="nav-link">오사카과학제전</a></li>
+                    <li><a href="schedule.html" class="nav-link">일정</a></li>
+                    <li><a href="access.html" class="nav-link">교통안내</a></li>
+                    <li><a href="gallery.html" class="nav-link active">갤러리</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="lang-toggle" class="icon-btn" aria-label="언어 전환"><i class="fa-solid fa-language"></i></button>
+                <button id="theme-toggle" class="icon-btn" aria-label="테마 변경"><i class="fa-solid fa-moon"></i></button>
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="메뉴 열기"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="../index.html" class="mobile-nav-link">홈</a></li>
+            <li><a href="tokyo.html" class="mobile-nav-link">동경청소년과학제전</a></li>
+            <li><a href="osaka.html" class="mobile-nav-link">오사카과학제전</a></li>
+            <li><a href="schedule.html" class="mobile-nav-link">일정</a></li>
+            <li><a href="access.html" class="mobile-nav-link">교통안내</a></li>
+            <li><a href="gallery.html" class="mobile-nav-link">갤러리</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Gallery Section -->
+        <section class="gallery-board-section">
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+            <div class="container">
+                <div class="section-header text-center reveal-fade revealed">
+                    <span class="section-subtitle">GALLERY</span>
+                    <h2 class="section-title">현장 분위기 갤러리</h2>
+                    <div class="section-underline"></div>
+                    <p class="hero-description" style="max-width: 600px; margin: 1.5rem auto 0 auto; color: var(--text-secondary);">
+                        2026 동경청소년과학제전 전국대회의 생생한 메카트로닉스 및 IT 과학기술 워크숍 현장을 고유한 <b>색연필 일러스트레이션 아트 스타일</b>의 카툰으로 감상해보세요.
+                    </p>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-board-grid" id="gallery-grid">
+                    <!-- Cards will be injected dynamically via JS -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination-container" id="pagination-controls">
+                    <!-- Pagination buttons injected dynamically via JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <div class="lightbox-content-wrap">
+            <button class="lightbox-nav lightbox-prev" id="lightbox-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <img class="lightbox-content" id="lightbox-img" src="" alt="확대 이미지">
+            <button class="lightbox-nav lightbox-next" id="lightbox-next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="lightbox-caption" id="lightbox-caption">
+            <h3 id="lightbox-title">제목</h3>
+            <p id="lightbox-desc">설명</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo">
+                        <div class="logo-icon-svg">
+                            <svg width="34" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18" cy="18" r="16" fill="url(#logoGlowGF)" opacity="0.2"/>
+                                <ellipse cx="18" cy="18" rx="14" ry="5.5" stroke="url(#blueGradGF)" stroke-width="2.2" transform="rotate(-30 18 18)"/>
+                                <ellipse cx="18" cy="18" rx="14" ry="5.5" stroke="url(#redGradGF)" stroke-width="2.2" transform="rotate(30 18 18)"/>
+                                <circle cx="18" cy="18" r="4.5" fill="url(#coreGradGF)"/>
+                                <circle cx="18" cy="18" r="1.8" fill="#FFFFFF"/>
+                                <defs>
+                                    <radialGradient id="logoGlowGF" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18 18) scale(16)">
+                                        <stop stop-color="#4facfe"/>
+                                        <stop offset="1" stop-color="#ff4757" stop-opacity="0"/>
+                                    </radialGradient>
+                                    <linearGradient id="redGradGF" x1="4" y1="18" x2="32" y2="18" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#ff4757"/>
+                                        <stop offset="1" stop-color="#ffa502"/>
+                                    </linearGradient>
+                                    <linearGradient id="blueGradGF" x1="4" y1="18" x2="32" y2="18" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#1e90ff"/>
+                                        <stop offset="1" stop-color="#00d2d3"/>
+                                    </linearGradient>
+                                    <linearGradient id="coreGradGF" x1="13.5" y1="13.5" x2="22.5" y2="22.5" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#ff4757"/>
+                                        <stop offset="1" stop-color="#1e90ff"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="logo-text-wrap">
+                            <span class="logo-text"><span class="logo-kr-accent">한·일</span>청소년과학제전</span>
+                            <span class="logo-sub-badge">Korea - Japan Youth Science</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        청소년을 위한 과학의 제전(동경전국대회 & 오사카대회) 한국어 종합 안내 플랫폼.
+                        과학기술 진흥과 청소년 탐구 활동을 응원합니다.
+                    </p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="../index.html">메인 홈</a></li>
+                        <li><a href="tokyo.html">동경청소년과학제전</a></li>
+                        <li><a href="osaka.html">오사카청소년과학제전</a></li>
+                        <li><a href="schedule.html">2026년 일정안내</a></li>
+                        <li><a href="access.html">오시는 길 (교통)</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>주요 주최/관련 기관</h4>
+                    <ul>
+                        <li><a href="https://www.jsf.or.jp" target="_blank" rel="noopener">일본과학기술진흥재단 (JSF)</a></li>
+                        <li><a href="https://www.jsf.or.jp/museum/" target="_blank" rel="noopener">도쿄 과학기술관 (Science Museum)</a></li>
+                        <li><a href="http://www.kagakunosaiten.jp/" target="_blank" rel="noopener">과학의 제전 공식 Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 한일청소년과학제전 소개 웹사이트. All rights reserved. | Howlab Science Lab Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Gallery Items Data (13 processed cartoon images)
+            const galleryItems = [
+                {
+                    img: "../images/tokyo_2026_cartoon/20260724_134144_cartoon.png",
+                    title: "로봇 팔 제어 워크숍",
+                    desc: "정밀 서보모터 제어 및 블루투스 프로그래밍 학습에 열중하는 참가자들"
+                },
+                {
+                    img: "../images/tokyo_2026_cartoon/20260724_134150_cartoon.png",
+                    title: "아두이노 센서 워크숍",
+                    desc: "초음파 거리 측정 센서와 디스플레이 모듈을 활용한 회로 구성 실험"
+                },
+                {
+                    img: "../images/tokyo_2026_cartoon/20260724_134156_cartoon.png",
+                    title: "스마트 모빌리티 조립",
+                    desc: "자율 주행 기능이 탑재된 다목적 차량 스마트 하드웨어 모델 빌딩"
+                },
+                {
+                    img: "../images/tokyo_2026_cartoon/20260724_134217_cartoon.png",
+                    title: "자율주행 알고리즘 검토",
+                    desc: "장애물 회피 및 주행 경로 최적화를 위한 펌웨어 코딩 튜토리얼"
+                },
+                {
+                    img: "../images/tokyo_2026_cartoon/20260724_134228_cartoon.png",
+                    title: "로봇 기동 주행 테스트",
+                    desc: "설계한 서보 제어 로봇 차량의 실제 구동 및 위치 센서 캘리브레이션"
+                },
+                {
+                    img: "../images/tokyo_2026_cartoon/20260724_134242_cartoon.png",
+                    title: "원격 무선 통신 실습",
+                    desc: "RF 송수신 및 블루투스를 사용한 원격 기기 제어 인터페이스 설계"
+                },
+                {
+                    img: "../images/tokyo_2026_cartoon/20260724_134440_cartoon.png",
+                    title: "스마트 홈 제어 시스템",
+                    desc: "조도와 온도 변화에 따라 작동하는 자동 팬 및 윈도우 서보 메커니즘"
+                },
+                {
+                    img: "../images/tokyo_2026_cartoon/20260724_135917_cartoon.png",
+                    title: "브레드보드 기초 회로 교육",
+                    desc: "저항, 콘덴서, 트랜지스터 등 전자 부품 결선 및 전압 분석 입문"
+                },
+                {
+                    img: "../images/tokyo_2026_cartoon/20260724_145523_cartoon.png",
+                    title: "라인트레이서 적외선 보정",
+                    desc: "지면 반사율 센서 값을 기반으로 한 고속 모터 스피드 튜닝 워크숍"
+                },
+                {
+                    img: "../images/tokyo_2026_cartoon/20260724_161321_cartoon.png",
+                    title: "3D 프린팅 파트 모델링",
+                    desc: "기구 설계를 위한 CAD 툴 학습 및 FDM 3D 프린터를 이용한 프로토타이핑"
+                },
+                {
+                    img: "../images/tokyo_2026_cartoon/20260724_161325_cartoon.png",
+                    title: "다관절 로봇 보정 작업",
+                    desc: "여러 개의 기어드 모터가 동시에 구동하는 링크 기구의 축 대칭 조정"
+                },
+                {
+                    img: "../images/tokyo_2026_cartoon/20260724_161514_cartoon.png",
+                    title: "자동 정렬 물류 컨베이어",
+                    desc: "컬러 센서 감지를 통한 다목적 자동 분류 모형 스마트 공정 체험"
+                },
+                {
+                    img: "../images/tokyo_2026_cartoon/20260724_235451_cartoon.png",
+                    title: "한일 청소년 연합 로봇 발표",
+                    desc: "워크숍 과정에서 양국 학생들이 팀을 이루어 완성한 자율주행 완성본 프레젠테이션"
+                }
+            ];
+
+            const itemsPerPage = 10;
+            let currentPage = 1;
+            let currentLightboxIndex = 0;
+
+            const gridContainer = document.getElementById('gallery-grid');
+            const paginationContainer = document.getElementById('pagination-controls');
+
+            // Lightbox Elements
+            const lightbox = document.getElementById('lightbox-modal');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxTitle = document.getElementById('lightbox-title');
+            const lightboxDesc = document.getElementById('lightbox-desc');
+            const closeBtn = document.getElementById('lightbox-close');
+            const prevBtn = document.getElementById('lightbox-prev');
+            const nextBtn = document.getElementById('lightbox-next');
+
+            // Render Gallery Page
+            function renderPage(page) {
+                gridContainer.innerHTML = '';
+                const startIndex = (page - 1) * itemsPerPage;
+                const endIndex = Math.min(startIndex + itemsPerPage, galleryItems.length);
+
+                for (let i = startIndex; i < endIndex; i++) {
+                    const item = galleryItems[i];
+                    const card = document.createElement('div');
+                    card.className = 'gallery-board-card';
+                    card.innerHTML = `
+                        <div class="gallery-card-thumb">
+                            <img src="${item.img}" alt="${item.title}" loading="lazy">
+                        </div>
+                        <div class="gallery-card-body">
+                            <h3 class="gallery-card-title">${item.title}</h3>
+                            <p class="gallery-card-desc">${item.desc}</p>
+                        </div>
+                    `;
+                    card.addEventListener('click', () => {
+                        openLightbox(i);
+                    });
+                    gridContainer.appendChild(card);
+                }
+
+                renderPagination();
+            }
+
+            // Render Pagination buttons
+            function renderPagination() {
+                paginationContainer.innerHTML = '';
+                const totalPages = Math.ceil(galleryItems.length / itemsPerPage);
+
+                // Prev Button
+                const prevPageBtn = document.createElement('button');
+                prevPageBtn.className = 'pagination-btn';
+                prevPageBtn.disabled = currentPage === 1;
+                prevPageBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i> 이전';
+                prevPageBtn.addEventListener('click', () => {
+                    if (currentPage > 1) {
+                        currentPage--;
+                        renderPage(currentPage);
+                        window.scrollTo({ top: 300, behavior: 'smooth' });
+                    }
+                });
+                paginationContainer.appendChild(prevPageBtn);
+
+                // Number Buttons
+                for (let i = 1; i <= totalPages; i++) {
+                    const pageBtn = document.createElement('button');
+                    pageBtn.className = `pagination-btn ${currentPage === i ? 'active' : ''}`;
+                    pageBtn.innerText = i;
+                    pageBtn.addEventListener('click', () => {
+                        currentPage = i;
+                        renderPage(currentPage);
+                        window.scrollTo({ top: 300, behavior: 'smooth' });
+                    });
+                    paginationContainer.appendChild(pageBtn);
+                }
+
+                // Next Button
+                const nextPageBtn = document.createElement('button');
+                nextPageBtn.className = 'pagination-btn';
+                nextPageBtn.disabled = currentPage === totalPages;
+                nextPageBtn.innerHTML = '다음 <i class="fa-solid fa-chevron-right"></i>';
+                nextPageBtn.addEventListener('click', () => {
+                    if (currentPage < totalPages) {
+                        currentPage++;
+                        renderPage(currentPage);
+                        window.scrollTo({ top: 300, behavior: 'smooth' });
+                    }
+                });
+                paginationContainer.appendChild(nextPageBtn);
+            }
+
+            // Lightbox Functions
+            function openLightbox(index) {
+                currentLightboxIndex = index;
+                const item = galleryItems[index];
+                
+                lightboxImg.src = item.img;
+                lightboxTitle.innerText = item.title;
+                lightboxDesc.innerText = item.desc;
+                
+                lightbox.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Stop background scrolling
+            }
+
+            function closeLightbox() {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = ''; // Resume background scrolling
+            }
+
+            function navigateLightbox(direction) {
+                currentLightboxIndex += direction;
+                if (currentLightboxIndex < 0) {
+                    currentLightboxIndex = galleryItems.length - 1;
+                } else if (currentLightboxIndex >= galleryItems.length) {
+                    currentLightboxIndex = 0;
+                }
+                
+                const item = galleryItems[currentLightboxIndex];
+                lightboxImg.src = item.img;
+                lightboxTitle.innerText = item.title;
+                lightboxDesc.innerText = item.desc;
+            }
+
+            // Lightbox Event Listeners
+            closeBtn.addEventListener('click', closeLightbox);
+            prevBtn.addEventListener('click', () => navigateLightbox(-1));
+            nextBtn.addEventListener('click', () => navigateLightbox(1));
+
+            // Close lightbox on click outside the image wrapper
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (lightbox.style.display === 'flex') {
+                    if (e.key === 'Escape') {
+                        closeLightbox();
+                    } else if (e.key === 'ArrowLeft') {
+                        navigateLightbox(-1);
+                    } else if (e.key === 'ArrowRight') {
+                        navigateLightbox(1);
+                    }
+                }
+            });
+
+            // Initial render
+            renderPage(currentPage);
+        });
+    </script>
+</body>
+</html>
