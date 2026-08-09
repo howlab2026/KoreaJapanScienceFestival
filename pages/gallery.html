@@ -92,7 +92,7 @@
                     <h2 class="section-title">현장 분위기 갤러리</h2>
                     <div class="section-underline"></div>
                     <p class="hero-description" style="max-width: 600px; margin: 1.5rem auto 0 auto; color: var(--text-secondary);">
-                        2026 동경청소년과학제전 전국대회의 생생한 메카트로닉스 및 IT 과학기술 워크숍 현장을 고유한 <b>색연필 일러스트레이션 아트 스타일</b>의 카툰으로 감상해보세요.
+                        과학제전의 다양한 이미지를 색연필 일러스트레이션 아트 스타일로 감상해 보세요.
                     </p>
                 </div>
 
@@ -116,11 +116,6 @@
             <button class="lightbox-nav lightbox-prev" id="lightbox-prev"><i class="fa-solid fa-chevron-left"></i></button>
             <img class="lightbox-content" id="lightbox-img" src="" alt="확대 이미지">
             <button class="lightbox-nav lightbox-next" id="lightbox-next"><i class="fa-solid fa-chevron-right"></i></button>
-        </div>
-        <div class="lightbox-caption" id="lightbox-caption">
-            <h3 id="lightbox-title">제목</h3>
-            <p id="lightbox-desc">설명</p>
-        </div>
     </div>
 
     <!-- Footer -->
@@ -200,71 +195,19 @@
         document.addEventListener('DOMContentLoaded', () => {
             // Gallery Items Data (13 processed cartoon images)
             const galleryItems = [
-                {
-                    img: "../images/tokyo_2026_cartoon/20260724_134144_cartoon.png",
-                    title: "로봇 팔 제어 워크숍",
-                    desc: "정밀 서보모터 제어 및 블루투스 프로그래밍 학습에 열중하는 참가자들"
-                },
-                {
-                    img: "../images/tokyo_2026_cartoon/20260724_134150_cartoon.png",
-                    title: "아두이노 센서 워크숍",
-                    desc: "초음파 거리 측정 센서와 디스플레이 모듈을 활용한 회로 구성 실험"
-                },
-                {
-                    img: "../images/tokyo_2026_cartoon/20260724_134156_cartoon.png",
-                    title: "스마트 모빌리티 조립",
-                    desc: "자율 주행 기능이 탑재된 다목적 차량 스마트 하드웨어 모델 빌딩"
-                },
-                {
-                    img: "../images/tokyo_2026_cartoon/20260724_134217_cartoon.png",
-                    title: "자율주행 알고리즘 검토",
-                    desc: "장애물 회피 및 주행 경로 최적화를 위한 펌웨어 코딩 튜토리얼"
-                },
-                {
-                    img: "../images/tokyo_2026_cartoon/20260724_134228_cartoon.png",
-                    title: "로봇 기동 주행 테스트",
-                    desc: "설계한 서보 제어 로봇 차량의 실제 구동 및 위치 센서 캘리브레이션"
-                },
-                {
-                    img: "../images/tokyo_2026_cartoon/20260724_134242_cartoon.png",
-                    title: "원격 무선 통신 실습",
-                    desc: "RF 송수신 및 블루투스를 사용한 원격 기기 제어 인터페이스 설계"
-                },
-                {
-                    img: "../images/tokyo_2026_cartoon/20260724_134440_cartoon.png",
-                    title: "스마트 홈 제어 시스템",
-                    desc: "조도와 온도 변화에 따라 작동하는 자동 팬 및 윈도우 서보 메커니즘"
-                },
-                {
-                    img: "../images/tokyo_2026_cartoon/20260724_135917_cartoon.png",
-                    title: "브레드보드 기초 회로 교육",
-                    desc: "저항, 콘덴서, 트랜지스터 등 전자 부품 결선 및 전압 분석 입문"
-                },
-                {
-                    img: "../images/tokyo_2026_cartoon/20260724_145523_cartoon.png",
-                    title: "라인트레이서 적외선 보정",
-                    desc: "지면 반사율 센서 값을 기반으로 한 고속 모터 스피드 튜닝 워크숍"
-                },
-                {
-                    img: "../images/tokyo_2026_cartoon/20260724_161321_cartoon.png",
-                    title: "3D 프린팅 파트 모델링",
-                    desc: "기구 설계를 위한 CAD 툴 학습 및 FDM 3D 프린터를 이용한 프로토타이핑"
-                },
-                {
-                    img: "../images/tokyo_2026_cartoon/20260724_161325_cartoon.png",
-                    title: "다관절 로봇 보정 작업",
-                    desc: "여러 개의 기어드 모터가 동시에 구동하는 링크 기구의 축 대칭 조정"
-                },
-                {
-                    img: "../images/tokyo_2026_cartoon/20260724_161514_cartoon.png",
-                    title: "자동 정렬 물류 컨베이어",
-                    desc: "컬러 센서 감지를 통한 다목적 자동 분류 모형 스마트 공정 체험"
-                },
-                {
-                    img: "../images/tokyo_2026_cartoon/20260724_235451_cartoon.png",
-                    title: "한일 청소년 연합 로봇 발표",
-                    desc: "워크숍 과정에서 양국 학생들이 팀을 이루어 완성한 자율주행 완성본 프레젠테이션"
-                }
+                { img: "../images/tokyo_2026_cartoon/20260724_134144_cartoon.png" },
+                { img: "../images/tokyo_2026_cartoon/20260724_134150_cartoon.png" },
+                { img: "../images/tokyo_2026_cartoon/20260724_134156_cartoon.png" },
+                { img: "../images/tokyo_2026_cartoon/20260724_134217_cartoon.png" },
+                { img: "../images/tokyo_2026_cartoon/20260724_134228_cartoon.png" },
+                { img: "../images/tokyo_2026_cartoon/20260724_134242_cartoon.png" },
+                { img: "../images/tokyo_2026_cartoon/20260724_134440_cartoon.png" },
+                { img: "../images/tokyo_2026_cartoon/20260724_135917_cartoon.png" },
+                { img: "../images/tokyo_2026_cartoon/20260724_145523_cartoon.png" },
+                { img: "../images/tokyo_2026_cartoon/20260724_161321_cartoon.png" },
+                { img: "../images/tokyo_2026_cartoon/20260724_161325_cartoon.png" },
+                { img: "../images/tokyo_2026_cartoon/20260724_161514_cartoon.png" },
+                { img: "../images/tokyo_2026_cartoon/20260724_235451_cartoon.png" }
             ];
 
             const itemsPerPage = 10;
@@ -277,8 +220,6 @@
             // Lightbox Elements
             const lightbox = document.getElementById('lightbox-modal');
             const lightboxImg = document.getElementById('lightbox-img');
-            const lightboxTitle = document.getElementById('lightbox-title');
-            const lightboxDesc = document.getElementById('lightbox-desc');
             const closeBtn = document.getElementById('lightbox-close');
             const prevBtn = document.getElementById('lightbox-prev');
             const nextBtn = document.getElementById('lightbox-next');
@@ -294,12 +235,8 @@
                     const card = document.createElement('div');
                     card.className = 'gallery-board-card';
                     card.innerHTML = `
-                        <div class="gallery-card-thumb">
-                            <img src="${item.img}" alt="${item.title}" loading="lazy">
-                        </div>
-                        <div class="gallery-card-body">
-                            <h3 class="gallery-card-title">${item.title}</h3>
-                            <p class="gallery-card-desc">${item.desc}</p>
+                        <div class="gallery-card-thumb" style="aspect-ratio: 4 / 3;">
+                            <img src="${item.img}" alt="과학제전 이미지" loading="lazy">
                         </div>
                     `;
                     card.addEventListener('click', () => {
@@ -364,8 +301,6 @@
                 const item = galleryItems[index];
                 
                 lightboxImg.src = item.img;
-                lightboxTitle.innerText = item.title;
-                lightboxDesc.innerText = item.desc;
                 
                 lightbox.style.display = 'flex';
                 document.body.style.overflow = 'hidden'; // Stop background scrolling
@@ -386,8 +321,6 @@
                 
                 const item = galleryItems[currentLightboxIndex];
                 lightboxImg.src = item.img;
-                lightboxTitle.innerText = item.title;
-                lightboxDesc.innerText = item.desc;
             }
 
             // Lightbox Event Listeners
