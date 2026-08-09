@@ -4,25 +4,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================================================
     const themeToggleBtn = document.getElementById('theme-toggle');
     const themeIcon = themeToggleBtn.querySelector('i');
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const savedTheme = localStorage.getItem('theme') || 'light';
     document.body.className = `${savedTheme}-theme`;
     updateThemeIcon(savedTheme);
 
     themeToggleBtn.addEventListener('click', () => {
-        let theme = 'dark';
-        if (document.body.classList.contains('dark-theme')) {
-            document.body.classList.replace('dark-theme', 'light-theme');
-            theme = 'light';
-        } else {
+        let theme = 'light';
+        if (document.body.classList.contains('light-theme')) {
             document.body.classList.replace('light-theme', 'dark-theme');
             theme = 'dark';
+        } else {
+            document.body.classList.replace('dark-theme', 'light-theme');
+            theme = 'light';
         }
         localStorage.setItem('theme', theme);
         updateThemeIcon(theme);
     });
 
     function updateThemeIcon(theme) {
-        themeIcon.className = theme === 'light' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+        themeIcon.className = theme === 'light' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
     }
 
     // ==========================================================================
