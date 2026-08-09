@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2026년 청소년을 위한 과학의 제전 전국대회(동경청소년과학제전 @ 과학기술관) & 오사카 청소년 과학의 제전(Science Festival 2026 in Osaka @ 오사카 교육대학) 종합 안내 웹사이트">
+    <title>한일청소년과학제전 | 동경청소년과학제전 & 오사카청소년과학제전</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+    <!-- Header -->
+    <header id="main-header" class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" id="nav-logo">
+                <div class="logo-icon-svg">
+                    <svg width="34" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="18" r="16" fill="url(#logoGlow1)" opacity="0.2"/>
+                        <ellipse cx="18" cy="18" rx="14" ry="5.5" stroke="url(#blueGrad1)" stroke-width="2.2" transform="rotate(-30 18 18)"/>
+                        <ellipse cx="18" cy="18" rx="14" ry="5.5" stroke="url(#redGrad1)" stroke-width="2.2" transform="rotate(30 18 18)"/>
+                        <circle cx="18" cy="18" r="4.5" fill="url(#coreGrad1)"/>
+                        <circle cx="18" cy="18" r="1.8" fill="#FFFFFF"/>
+                        <defs>
+                            <radialGradient id="logoGlow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18 18) scale(16)">
+                                <stop stop-color="#4facfe"/>
+                                <stop offset="1" stop-color="#ff4757" stop-opacity="0"/>
+                            </radialGradient>
+                            <linearGradient id="redGrad1" x1="4" y1="18" x2="32" y2="18" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#ff4757"/>
+                                <stop offset="1" stop-color="#ffa502"/>
+                            </linearGradient>
+                            <linearGradient id="blueGrad1" x1="4" y1="18" x2="32" y2="18" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#1e90ff"/>
+                                <stop offset="1" stop-color="#00d2d3"/>
+                            </linearGradient>
+                            <linearGradient id="coreGrad1" x1="13.5" y1="13.5" x2="22.5" y2="22.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#ff4757"/>
+                                <stop offset="1" stop-color="#1e90ff"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="logo-text-wrap">
+                    <span class="logo-text"><span class="logo-kr-accent">한·일</span>청소년과학제전</span>
+                    <span class="logo-sub-badge">Korea - Japan Youth Science</span>
+                </div>
+            </a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link active">홈</a></li>
+                    <li><a href="#about" class="nav-link">소개</a></li>
+                    <li><a href="#tokyo" class="nav-link">동경청소년과학제전</a></li>
+                    <li><a href="#osaka" class="nav-link">오사카청소년과학제전</a></li>
+                    <li><a href="#compare" class="nav-link">비교</a></li>
+                    <li><a href="#schedule" class="nav-link">일정</a></li>
+                    <li><a href="#access" class="nav-link">교통안내</a></li>
+                    <li><a href="#gallery" class="nav-link">갤러리</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="lang-toggle" class="icon-btn" aria-label="언어 전환" title="한국어/日本語"><i class="fa-solid fa-language"></i></button>
+                <button id="theme-toggle" class="icon-btn" aria-label="테마 변경" title="다크/라이트 모드"><i class="fa-solid fa-moon"></i></button>
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="메뉴 열기"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="#hero" class="mobile-nav-link">홈</a></li>
+            <li><a href="#about" class="mobile-nav-link">소개</a></li>
+            <li><a href="#tokyo" class="mobile-nav-link">동경청소년과학제전</a></li>
+            <li><a href="#osaka" class="mobile-nav-link">오사카청소년과학제전</a></li>
+            <li><a href="#compare" class="mobile-nav-link">비교</a></li>
+            <li><a href="#schedule" class="mobile-nav-link">일정</a></li>
+            <li><a href="#access" class="mobile-nav-link">교통안내</a></li>
+            <li><a href="#gallery" class="mobile-nav-link">갤러리</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-particles" id="hero-particles"></div>
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+            <div class="hero-glow hero-glow-3"></div>
+            
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge reveal-fade">
+                        <i class="fa-solid fa-sparkles"></i> 35주년 기념 2026 전국대회 & 오사카 대회
+                    </div>
+                    <h1 class="reveal-fade">
+                        체험과 대화로 만나는<br>
+                        <span class="gradient-text">한·일 청소년과학제전</span>
+                    </h1>
+                    <p class="hero-description reveal-fade">
+                        1992년 첫 개최 이래 35년 역사를 자랑하는 일본 최대 규모의 청소년 과학 체험 축제.<br>
+                        도쿄 <strong>과학기술관(科学技術館)</strong>의 2026 전국대회와 오사카 <strong>오사카 교육대학 텐노지 캠퍼스</strong>의 대회를 종합 안내합니다.
+                    </p>
+                    <div class="hero-actions reveal-fade">
+                        <a href="pages/tokyo.html" class="btn btn-primary btn-lg">
+                            <i class="fa-solid fa-landmark"></i> 동경청소년과학제전 상세
+                        </a>
+                        <a href="pages/osaka.html" class="btn btn-secondary btn-lg">
+                            <i class="fa-solid fa-graduation-cap"></i> 오사카과학제전 상세
+                        </a>
+                    </div>
+                    <div class="hero-stats reveal-fade">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="35">0</span><span class="stat-suffix">주년</span>
+                            <span class="stat-label">역사와 전통 (1992~)</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="18000">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">동경 전국대회 예상 관람객</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span><span class="stat-suffix">대</span>
+                            <span class="stat-label">오사카 쇼 유형 (부스/실내/야외)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-indicator" aria-label="스크롤 아래로">
+                <div class="mouse-icon"><div class="wheel"></div></div>
+                <span>스크롤</span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding about-section">
+            <div class="container">
+                <div class="section-header text-center reveal-fade">
+                    <span class="section-subtitle">ABOUT THE FESTIVAL</span>
+                    <h2 class="section-title">청소년을 위한 과학의 제전이란?</h2>
+                    <div class="section-underline"></div>
+                    <p class="section-description">
+                        "보는 것"에 그치지 않고 청소년과 오가는 질문 속에 "과학적 대화(Science Communication)"를 나누는 장입니다.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card reveal-fade">
+                        <div class="about-icon-wrap">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <h3>과학적 대화와 탐구</h3>
+                        <p>"왜 그럴까?", "어떻게 응용할 수 있을까?"를 함께 고민하며, 단순 관람을 넘어 스스로 질문을 던지고 답을 찾는 깊이 있는 탐구를 지향합니다.</p>
+                    </div>
+
+                    <div class="about-card reveal-fade">
+                        <div class="about-icon-wrap">
+                            <i class="fa-solid fa-hands-holding-circle"></i>
+                        </div>
+                        <h3>직접 체험하는 즐거움</h3>
+                        <p>물리, 화학, 생물, 지학부터 로봇, 환경, 에너지까지 다채로운 오리지널 실험과 공작을 4세 어린이부터 고등학생까지 흥미롭게 체험합니다.</p>
+                    </div>
+
+                    <div class="about-card reveal-fade">
+                        <div class="about-icon-wrap">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>대학 & 교육기관 연계</h3>
+                        <p>도쿄 과학기술관 및 오사카 교육대학 텐노지 캠퍼스에서 교사, 연구자, 대학생 및 청소년이 부스와 무대 실험 쇼를 직접 이끌어갑니다.</p>
+                    </div>
+
+                    <div class="about-card reveal-fade">
+                        <div class="about-icon-wrap">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>쾌적하고 안전한 관람</h3>
+                        <p>사전 안전 심사를 통과한 부스들과 혼잡 방지를 위한 정시 참가권·추첨권 및 안전 수칙을 적용하여 안전하게 참여합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tokyo Section -->
+        <section id="tokyo" class="section-padding festival-section tokyo-section">
+            <div class="container">
+                <div class="section-header text-center reveal-fade">
+                    <span class="section-subtitle">NATIONAL CONVENTION IN TOKYO</span>
+                    <h2 class="section-title">동경청소년과학제전 2026 전국대회</h2>
+                    <div class="section-underline"></div>
+                    <p class="section-description">青少年のための科学の祭典 2026 全国大会</p>
+                </div>
+
+                <div class="festival-showcase">
+                    <div class="festival-info-card reveal-fade">
+                        <div class="festival-badge tokyo-badge">
+                            <i class="fa-solid fa-trophy"></i> 35년 전통의 대표 대회
+                        </div>
+                        <h3>도쿄 키타노마루 공원 '과학기술관' 개최</h3>
+                        <p class="festival-desc">
+                            전국 청소년과 교육기관이 모이는 권위 있는 대회로, 도쿄의 <strong>과학기술관(科学技術館)</strong> 1층 이벤트홀과 야외 무대에서 56개 부스가 운영됩니다.
+                        </p>
+                        
+                        <div class="festival-details-grid">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <div>
+                                    <strong>개최일</strong>
+                                    <span>2026년 7월 25일(토) ~ 26일(일) <br><small style="color:var(--accent-tokyo);">(7월 24일: 준비일 및 출전자 교류회)</small></span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <div>
+                                    <strong>운영시간</strong>
+                                    <span>09:15 ~ 16:00 (양일 동일)</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <strong>장소</strong>
+                                    <span>도쿄 과학기술관 (千代田区北の丸公園 2-1)</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-ticket"></i>
+                                <div>
+                                    <strong>입장료 및 관람</strong>
+                                    <span>무료 입장 (정리권/참가권 타임슬롯 운영)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="pages/tokyo.html" class="btn btn-primary" style="margin-top: 1.5rem;">
+                            <i class="fa-solid fa-arrow-right"></i> 동경청소년과학제전 상세 보기
+                        </a>
+                    </div>
+
+                    <div class="festival-programs reveal-fade">
+                        <h3 class="programs-title"><i class="fa-solid fa-star"></i> 주요 부스 및 특색</h3>
+                        <div class="program-list">
+                            <div class="program-card">
+                                <div class="program-icon"><i class="fa-solid fa-flask"></i></div>
+                                <h4>Ⅰ형 기본연시형 부스</h4>
+                                <p>출전자와 관람객이 1:1 대화하며 15~20분간 원리와 개념을 배우는 신비한 실험 부스</p>
+                            </div>
+                            <div class="program-card">
+                                <div class="program-icon"><i class="fa-solid fa-shapes"></i></div>
+                                <h4>Ⅱ형 시행공간형 부스</h4>
+                                <p>직접 제작한 모형을 조종하거나 구동 범위를 테스트하는 넓은 공작·체험 전용 부스</p>
+                            </div>
+                            <div class="program-card">
+                                <div class="program-icon"><i class="fa-solid fa-tent"></i></div>
+                                <h4>야외 특설 부스</h4>
+                                <p>안전과 공간을 고려하여 과학기술관 야외 무대에 마련된 열기구, 거대 구조물 원리 체험</p>
+                            </div>
+                            <div class="program-card">
+                                <div class="program-icon"><i class="fa-solid fa-award"></i></div>
+                                <h4>학생상 부스 (6개)</h4>
+                                <p>우수한 기량과 창의적인 아이디어를 선보인 중·고등학생 및 대학생 동아리의 특별 출전</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Osaka Section -->
+        <section id="osaka" class="section-padding festival-section osaka-section">
+            <div class="container">
+                <div class="section-header text-center reveal-fade">
+                    <span class="section-subtitle">SCIENCE FESTIVAL 2026 IN OSAKA</span>
+                    <h2 class="section-title">오사카청소년과학제전 2026</h2>
+                    <div class="section-underline"></div>
+                    <p class="section-description">Science Festival 2026 in Osaka (오사카 교육대학 텐노지 캠퍼스)</p>
+                </div>
+
+                <div class="festival-showcase reverse">
+                    <div class="festival-info-card reveal-fade">
+                        <div class="festival-badge osaka-badge">
+                            <i class="fa-solid fa-graduation-cap"></i> 국립 오사카 교육대학 텐노지 캠퍼스 개최
+                        </div>
+                        <h3>2026년 신규 캠퍼스 개최 – 3대 전용 프로그램</h3>
+                        <p class="festival-desc">
+                            일본물리학회 킨키지부 주최로 매년 8월 개최되는 오사카 청소년 과학의 제전. 2026년은 <strong>오사카 교육대학 텐노지 캠퍼스(미래교육 공창센터 & 서관)</strong>에서 17:00까지 연장 진행됩니다.
+                        </p>
+
+                        <div class="festival-details-grid">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <div>
+                                    <strong>개최일</strong>
+                                    <span>2026년 8월 15일(토) ~ 16일(일)</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <div>
+                                    <strong>운영시간</strong>
+                                    <span>10:00 ~ 17:00 (양일 동일, 준비 08:00~)</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <strong>장소</strong>
+                                    <span>오사카 교육대학 텐노지 캠퍼스 (大阪市天王寺区南河堀町 4-88)</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-train"></i>
+                                <div>
+                                    <strong>인근역</strong>
+                                    <span>JR 텐노지역 도보 8분 / 테라다초역 도보 5분</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="pages/osaka.html" class="btn btn-secondary" style="margin-top: 1.5rem;">
+                            <i class="fa-solid fa-arrow-right"></i> 오사카과학제전 상세 보기
+                        </a>
+                    </div>
+
+                    <div class="festival-programs reveal-fade">
+                        <h3 class="programs-title"><i class="fa-solid fa-star"></i> 오사카 3대 프로그램 유형</h3>
+                        <div class="program-list">
+                            <div class="program-card">
+                                <div class="program-icon"><i class="fa-solid fa-vial"></i></div>
+                                <h4>A) 부스 시연 & 공작 부스</h4>
+                                <p>500~2,000세트의 대량 체형 공작 재료를 갖추고 어린이들이 수공예와 화학·물리 실험을 직접 체험</p>
+                            </div>
+                            <div class="program-card">
+                                <div class="program-icon"><i class="fa-solid fa-display"></i></div>
+                                <h4>B) 실내 대형 무대 쇼</h4>
+                                <p>미래교육 공창센터 강당 무대에서 25~60분간 진행되는 대형 시각적 시연 & 영상 대형 무대 쇼</p>
+                            </div>
+                            <div class="program-card">
+                                <div class="program-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                                <h4>C) 야외 대형 무대 쇼</h4>
+                                <p>캠퍼스 야외 운동장에서 펼쳐지는 화염, 수압, 폭발 대형 물리·화학 다이내믹 실험 쇼</p>
+                            </div>
+                            <div class="program-card">
+                                <div class="program-icon"><i class="fa-solid fa-building-columns"></i></div>
+                                <h4>미래교육 공창센터 & 서관</h4>
+                                <p>실험실 기반의 서관(West Bldg)과 첨단 공창센터 교사 공간에서 펼쳐지는 입체적 관람</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compare Section -->
+        <section id="compare" class="section-padding compare-section">
+            <div class="container">
+                <div class="section-header text-center reveal-fade">
+                    <span class="section-subtitle">COMPARISON</span>
+                    <h2 class="section-title">동경 VS 오사카 주요 특징 비교</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="compare-table-wrapper reveal-fade">
+                    <table class="compare-table">
+                        <thead>
+                            <tr>
+                                <th>구분 항목</th>
+                                <th class="tokyo-col"><i class="fa-solid fa-landmark"></i> 동경청소년과학제전 (전국대회)</th>
+                                <th class="osaka-col"><i class="fa-solid fa-graduation-cap"></i> 오사카청소년과학제전 (Science Festival)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>정식 명칭</strong></td>
+                                <td>青少年のための科学の祭典 2026 全国大会</td>
+                                <td>Science Festival 2026 in Osaka (青少年のための科学の祭典 大阪大会)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>개최 시기</strong></td>
+                                <td>2026.07.25(토) ~ 07.26(일) <small>(7/24 교류회)</small></td>
+                                <td>2026.08.15(토) ~ 08.16(일)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>운영 시간</strong></td>
+                                <td>09:15 ~ 16:00</td>
+                                <td>10:00 ~ 17:00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>개최 장소</strong></td>
+                                <td>도쿄 <strong>과학기술관 (科学技術館)</strong> (키타노마루 공원)</td>
+                                <td>오사카 <strong>오사카 교육대학 텐노지 캠퍼스</strong> (공창센터/서관)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>주최 기관</strong></td>
+                                <td>공익재단법인 日本科学技術振興財団 (JSF)</td>
+                                <td>일본물리학회 킨키지부 (PESJ Kinki Section) 및 관련 단체</td>
+                            </tr>
+                            <tr>
+                                <td><strong>부스/프로그램 특색</strong></td>
+                                <td>실험/공작 Ⅰ/Ⅱ형·야외 56개 엄선 부스, 학생상 부스</td>
+                                <td>A) 부스 시연&공작, B) 실내 대형 무대 쇼, C) 야외 무대 쇼</td>
+                            </tr>
+                            <tr>
+                                <td><strong>관람 시스템</strong></td>
+                                <td>정시 참가권/추첨권 타임슬롯 (10:30, 12:30, 14:30)</td>
+                                <td>500~2000세트 공작 체험 & 실내/야외 무대 교대 관람</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="section-padding schedule-section">
+            <div class="container">
+                <div class="section-header text-center reveal-fade">
+                    <span class="section-subtitle">2026 CALENDAR</span>
+                    <h2 class="section-title">2026년 주요 행사 일정 타임라인</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item reveal-fade">
+                        <div class="timeline-dot tokyo-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-badge tokyo-badge">동경 전국대회</span>
+                            <span class="timeline-date"><i class="fa-solid fa-calendar"></i> 2026.07.24 (금) 15:00~</span>
+                            <h3>출전자 사전 준비 및 출전자 교류회</h3>
+                            <p>과학기술관 1층에서 실험 장비 반입, 예비 실험 및 참가자·실행위원회 간 정보 교류회가 열립니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal-fade">
+                        <div class="timeline-dot tokyo-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-badge tokyo-badge">동경 전국대회 Main</span>
+                            <span class="timeline-date"><i class="fa-solid fa-calendar"></i> 2026.07.25 (토) ~ 07.26 (일)</span>
+                            <h3>동경청소년과학제전 2026 전국대회 본행사 (09:15~16:00)</h3>
+                            <p>과학기술관 1층 및 야외에서 56개 부스 관람. (10:30/12:30/14:30 정시 참가권 배포)</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal-fade">
+                        <div class="timeline-dot osaka-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-badge osaka-badge">오사카 대회 Main</span>
+                            <span class="timeline-date"><i class="fa-solid fa-calendar"></i> 2026.08.15 (토) ~ 08.16 (일)</span>
+                            <h3>오사카청소년과학제전 2026 (10:00~17:00)</h3>
+                            <p>오사카 교육대학 텐노지 캠퍼스에서 부스 시연, 실내 무대 쇼, 야외 무대 쇼 3개 프로그램 동시 개최.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center reveal-fade" style="margin-top: 3rem;">
+                    <a href="pages/schedule.html" class="btn btn-primary">
+                        <i class="fa-solid fa-calendar-check"></i> 상세 시간표 및 관람 안내
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access Section -->
+        <section id="access" class="section-padding access-section">
+            <div class="container">
+                <div class="section-header text-center reveal-fade">
+                    <span class="section-subtitle">LOCATION & MAP</span>
+                    <h2 class="section-title">개최지 위치 및 교통 안내</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="access-grid">
+                    <div class="access-card reveal-fade">
+                        <div class="access-card-header tokyo-header">
+                            <i class="fa-solid fa-landmark"></i>
+                            <h3>동경전국대회: 과학기술관</h3>
+                            <span>東京都千代田区北の丸公園 2-1</span>
+                        </div>
+                        <div class="access-card-body">
+                            <ul class="access-routes">
+                                <li><i class="fa-solid fa-train-subway"></i> <strong>구단시타역(九段下駅)</strong>: 2번 출구 도보 약 8분 (도자이선·한조몬선·신주쿠선)</li>
+                                <li><i class="fa-solid fa-train-subway"></i> <strong>다케바시역(竹橋駅)</strong>: 1b 출구 도보 약 7분 (도쿄메트로 도자이선)</li>
+                                <li><i class="fa-solid fa-plane"></i> <strong>하네다공항</strong>: 도쿄역/니혼바시 경유 약 45분</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="access-card reveal-fade">
+                        <div class="access-card-header osaka-header">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h3>오사카대회: 오사카 교육대학 텐노지 캠퍼스</h3>
+                            <span>大阪府大阪市天王寺区南河堀町 4-88</span>
+                        </div>
+                        <div class="access-card-body">
+                            <ul class="access-routes">
+                                <li><i class="fa-solid fa-train"></i> <strong>JR 텐노지역(天王寺駅)</strong>: 남쪽/동쪽 출구 도보 약 8분</li>
+                                <li><i class="fa-solid fa-train"></i> <strong>JR 테라다초역(寺田町駅)</strong>: 도보 약 5분</li>
+                                <li><i class="fa-solid fa-plane"></i> <strong>간사이공항</strong>: JR 관공쾌속 텐노지역 직통 약 50분</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center reveal-fade" style="margin-top: 2.5rem;">
+                    <a href="pages/access.html" class="btn btn-secondary">
+                        <i class="fa-solid fa-map-location-dot"></i> 상세 교통 및 구글 지도 보기
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section-padding gallery-section">
+            <div class="container">
+                <div class="section-header text-center reveal-fade">
+                    <span class="section-subtitle">GALLERY</span>
+                    <h2 class="section-title">현장 분위기 갤러리</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item gallery-item-lg reveal-fade">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #1e293b, #0f172a);">
+                            <i class="fa-solid fa-atom"></i>
+                            <span>도쿄 과학기술관 1층 현장</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>도쿄 과학기술관 1층 이벤트홀</h4>
+                            <p>실험·공작 체험에 열중하는 관람객들과 청소년들</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item reveal-fade">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #334155, #1e293b);">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>오사카 교육대학 텐노지 캠퍼스</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>미래교육 공창센터 & 서관</h4>
+                            <p>실내 대형 무대 쇼 및 실험실 부스 관람</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal-fade">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #475569, #334155);">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                            <span>야외 대형 무대 쇼</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>야외 대형 시연 무대</h4>
+                            <p>화염 및 다이내믹 수압 과학 실험 퍼포먼스</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal-fade">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+                            <i class="fa-solid fa-award"></i>
+                            <span>학생상 수상 부스</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>학생 동아리 발표</h4>
+                            <p>창의적인 고교 과학부의 아이디어 전시</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-item-lg reveal-fade">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9);">
+                            <i class="fa-solid fa-child-reaching"></i>
+                            <span>어린이 공작 부스 (500~2000세트)</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>온 가족이 즐기는 신비한 과학</h4>
+                            <p>부모님과 어린이가 함께 만드는 오리지널 과학 공작</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon-svg">
+                            <svg width="34" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18" cy="18" r="16" fill="url(#logoGlowF)" opacity="0.2"/>
+                                <ellipse cx="18" cy="18" rx="14" ry="5.5" stroke="url(#blueGradF)" stroke-width="2.2" transform="rotate(-30 18 18)"/>
+                                <ellipse cx="18" cy="18" rx="14" ry="5.5" stroke="url(#redGradF)" stroke-width="2.2" transform="rotate(30 18 18)"/>
+                                <circle cx="18" cy="18" r="4.5" fill="url(#coreGradF)"/>
+                                <circle cx="18" cy="18" r="1.8" fill="#FFFFFF"/>
+                                <defs>
+                                    <radialGradient id="logoGlowF" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18 18) scale(16)">
+                                        <stop stop-color="#4facfe"/>
+                                        <stop offset="1" stop-color="#ff4757" stop-opacity="0"/>
+                                    </radialGradient>
+                                    <linearGradient id="redGradF" x1="4" y1="18" x2="32" y2="18" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#ff4757"/>
+                                        <stop offset="1" stop-color="#ffa502"/>
+                                    </linearGradient>
+                                    <linearGradient id="blueGradF" x1="4" y1="18" x2="32" y2="18" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#1e90ff"/>
+                                        <stop offset="1" stop-color="#00d2d3"/>
+                                    </linearGradient>
+                                    <linearGradient id="coreGradF" x1="13.5" y1="13.5" x2="22.5" y2="22.5" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#ff4757"/>
+                                        <stop offset="1" stop-color="#1e90ff"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="logo-text-wrap">
+                            <span class="logo-text"><span class="logo-kr-accent">한·일</span>청소년과학제전</span>
+                            <span class="logo-sub-badge">Korea - Japan Youth Science</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        청소년을 위한 과학의 제전(동경전국대회 & 오사카대회) 한국어 종합 안내 플랫폼.
+                        과학기술 진흥과 청소년 탐구 활동을 응원합니다.
+                    </p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="pages/tokyo.html">동경청소년과학제전</a></li>
+                        <li><a href="pages/osaka.html">오사카청소년과학제전</a></li>
+                        <li><a href="pages/schedule.html">2026년 일정안내</a></li>
+                        <li><a href="pages/access.html">오시는 길 (교통)</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>주요 주최/관련 기관</h4>
+                    <ul>
+                        <li><a href="https://www.jsf.or.jp" target="_blank" rel="noopener">일본과학기술진흥재단 (JSF)</a></li>
+                        <li><a href="https://www.pesj-bkk.jp/OSF/" target="_blank" rel="noopener">오사카 과학의 제전 공식 (PESJ OSF)</a></li>
+                        <li><a href="https://osaka-kyoiku.ac.jp/en/" target="_blank" rel="noopener">오사카 교육대학 (Osaka Kyoiku Univ)</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 한일청소년과학제전 소개 웹사이트. All rights reserved. | Howlab Science Lab Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
