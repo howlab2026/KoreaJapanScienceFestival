@@ -1,2 +1,9 @@
 # Ignore raw source photos to prevent bloating the GitHub repository (1.9 GB)
 images/tokyo_2026/
+
+# Ignore model files and compiled python files
+*.onnx
+__pycache__/
+*.pyc
+.agents/
+docs/

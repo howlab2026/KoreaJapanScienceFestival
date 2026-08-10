@@ -1245,21 +1245,24 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     margin-top: 2rem;
 }
 .pagination-btn {
-    padding: 8px 16px;
+    padding: 2px 6px;
+    height: 22px;
+    min-width: 22px;
+    justify-content: center;
     border: 1px solid var(--border-color);
     background: var(--bg-card);
     color: var(--text-primary);
-    border-radius: var(--border-radius-sm);
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     transition: var(--transition-fast);
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 2px;
 }
 .pagination-btn:hover:not(:disabled) {
     border-color: var(--primary-color);
@@ -1285,32 +1288,32 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(15, 23, 42, 0.95);
-    backdrop-filter: blur(8px);
+    background-color: rgba(6, 8, 15, 0.6);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .lightbox-close {
     position: absolute;
-    top: 24px;
-    right: 32px;
+    top: -40px;
+    right: -66px;
     color: #fff;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 300;
     cursor: pointer;
     transition: var(--transition-fast);
+    z-index: 2010;
 }
 .lightbox-close:hover {
     color: var(--primary-color);
 }
 .lightbox-content-wrap {
     position: relative;
-    max-width: 80%;
+    max-width: 500px;
     max-height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
 }
 .lightbox-content {
     max-width: 100%;
@@ -1319,6 +1322,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: var(--border-radius-md);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
 }
 .lightbox-nav {
     position: absolute;
@@ -1363,8 +1367,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Responsive adjustments for gallery board */
 @media (max-width: 1200px) {
-    .lightbox-prev { left: 16px; }
-    .lightbox-next { right: 16px; }
+    .lightbox-prev { left: -60px; }
+    .lightbox-next { right: -60px; }
+    .lightbox-close { right: -54px; top: -40px; }
     .lightbox-content-wrap { max-width: 90%; }
 }
 @media (max-width: 1024px) {
@@ -1384,6 +1389,18 @@ h1, h2, h3, h4, h5, h6 {
     }
     .lightbox-prev { left: 8px; }
     .lightbox-next { right: 8px; }
+    .lightbox-close {
+        right: 8px;
+        top: 12px;
+        font-size: 28px;
+        background: rgba(6, 8, 15, 0.6);
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media (max-width: 480px) {
     .gallery-board-grid {
